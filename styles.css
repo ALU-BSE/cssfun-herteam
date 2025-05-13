@@ -1,48 +1,109 @@
 /* TODO: Add a Google Font import (choose any font you like) */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
-/* TODO: Set up basic reset styles (margin, padding, box-sizing) */
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
 
-/* TODO: Style the body with a background color and font family */
+
+body {
+    background-color: #081C15;
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
 
 .profile-card {
-    /* TODO: Add width, margin, background color, border-radius, and box-shadow */
-    /* TODO: Add padding and set overflow to hidden */
+    width: 400px;
+    margin: 20px;
+    background-color: #D8F3DC;
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    padding: 50px;
+    overflow: hidden;
 }
 
 .profile-card header {
-    /* TODO: Style the header with text alignment, padding, and background color */
+    text-align: center;
+    padding: 15px 15px;
+    background-color: #1B4332;
 }
 
 .profile-img {
-    /* TODO: Add styles for the profile image (width, height, border-radius, etc.) */
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin: 0 auto;
+    border: 4px solid #ffffff;
+    margin-top: -50px;
 }
 
 .profile-name {
-    /* TODO: Style the name with font size, weight, color, and margin */
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #95D5B2;
+    margin-top: 10px;
 }
 
 .profile-title {
-    /* TODO: Style the title with font size, color, and margin */
+    font-size: 1rem;
+    color: #D8F3DC;
+    margin-bottom: 10px;
 }
 
 .profile-details {
-    /* TODO: Add padding to the details section */
+    padding: 15px;
+
 }
 
 .profile-bio {
-    /* TODO: Style the bio with font size, line height, and color */
+    font-size: 0.95rem;
+    text-align: center;
+    line-height: 1.6;
+    color: #1B4332;
+    margin-bottom: 15px;
 }
 
 .profile-skills {
-    /* TODO: Style the skills list (remove list style, add padding) */
-    /* TODO: Style the skills list items (display, background, margin, etc.) */
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.profile-skills li {
+    display: inline-block;
+    background-color: #95D5B2;
+    padding: 5px 10px;
+    border-radius: 20px;
+    font-size: 0.85rem;
+    color: #1B4332;
 }
 
 .profile-footer {
     /* TODO: Style the footer with background color, padding, and text alignment */
+    background-color: #1B4332;
+    padding: 10px;
+    text-align: center;
+    border-radius: 5px;
 }
 
 .social-link {
-    /* TODO: Style social links (display, color, margin, etc.) */
-    /* TODO: Add hover effect for social links */
+    display: inline-block;
+    color: #B7E4C7;
+    margin: 0 10px;
+    text-decoration: none;
+    font-size: 1.2rem;
+    transition: color 0.3s ease;
+}
+
+.social-link:hover {
+    color: #D8F3DC;
 }
